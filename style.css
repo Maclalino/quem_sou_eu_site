@@ -1,0 +1,84 @@
+@charset "UTF=8";
+@font-face {
+    font-family:'teste' ;
+    src: url('fontes/LucyRosePERSONAL-Regular.otf') format('opentype'); 
+}
+*{
+    font-family:Arial, Helvetica, sans-serif; /*fonte */
+    /* medidas absolutas 
+    cm,mn,in,px,pt,pc*
+
+     medidas relativas      } font size
+     em, ex, rem, vw, vh,%
+    16px geralmente = 1em
+     */
+    font-size: 17px ; /* tamanho  da fonte */
+    font-weight: 600; /* Peso da fonte(lighter(mais magrinha),normal, bold, bolder) */
+    text-decoration: none; /* texto sublinhado(underline)*/
+    
+}
+p {
+    text-align: justify; /* Alinhamento do texto, left, right, center... */
+    text-indent: 20px; /* inicio do paragrafo, com espaço */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+body{
+    background-image: linear-gradient(to right,#A1A7A8,#A1A7A8) /*Definir uma imagem de fundo, estamos usando um degrade */
+}
+h1{
+    color:black;
+    text-align: center; /* Alinhamento do texto, left, right, center... */
+    text-shadow: 1px 1px 0px #424242; /* Adicionar sombra */
+    font-size: 28px; /* tamanho  da fonte */
+    font-weight: bolder;
+    font-family: 'teste';
+   
+}
+h1#principal{ /* so pode ter um id(.) no html o resto tem que ser class(.)*/
+    text-align: left;
+}
+h2{
+    color: #30363d;
+    font-size: 20px; /* tamanho  da fonte */
+    font-family: 'teste';
+}
+main{
+    
+    background-color: #D9D9D9; /*cor do main*/ 
+    width: 800px; /* largura */
+    padding: 20px; /* acolchoamento, tamanho do main*/
+    margin: auto; /* meio da tela*/
+    border-radius: 20px; /*pontas do main arrendondado*/
+    box-shadow: 5px 5px 15px #424242;  /* sombreamento*/
+}
+div{
+    display: inline-block; /* Deixa um bloco um do lado do outro */
+    background-color: white;
+    border: 1px solid #012030 ; /* borda */
+    text-align: center;
+    height: 95px; /* altura */
+    width:300px; /* largura */
+    margin:auto;
+    border-radius: 30px;
+    box-shadow: 5px 5px 15px #012030;
+}
+div:hover{ /* passar o mouse por cima e mudar de cor */
+    background-color: #566273;
+}
+a{
+    color: #012030;
+    font-weight: bold;
+    
+}
+a:hover{
+    text-decoration: underline;
+}
+a > div {
+    color: #012030;
+    font-weight: bold;
+    margin: auto;
+}
+main#foto{
+    width: 200px;
+}
