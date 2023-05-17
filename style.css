@@ -24,19 +24,33 @@ p {
 }
 
 body{
-    background-image: linear-gradient(to right,#A1A7A8,#A1A7A8) /*Definir uma imagem de fundo, estamos usando um degrade */
+    background-image:url(fundoarq.jpg) ; /*Definir uma imagem de fundo, estamos usando um degrade */
+    background-repeat: repeat;
+    background-attachment: fixed;
 }
 h1{
     color:black;
     text-align: center; /* Alinhamento do texto, left, right, center... */
-    text-shadow: 1px 1px 0px #424242; /* Adicionar sombra */
+    text-shadow: 4px 4px 6px rgb(94, 94, 94); /* Adicionar sombra */
     font-size: 28px; /* tamanho  da fonte */
-    font-weight: bolder;
+    font-weight: 1200;
     font-family: 'teste';
+    
+    
+    /* height: 85px; altura
+    width: 300px; largura
+    border-width: 10px; tamanho da borda 
+    border-style: solid;
+    border-color: #012030;
+    
+    padding-bottom: 2px;
+    
+    margin:auto; /* deixar a margem no meio */
+
    
 }
-h1#principal{ /* so pode ter um id(.) no html o resto tem que ser class(.)*/
-    text-align: left;
+h1#principal{ /* so pode ter um id(#) no html o resto tem que ser class(.)*/
+  text-shadow: white;
 }
 h2{
     color: #30363d;
@@ -55,13 +69,13 @@ main{
 div{
     display: inline-block; /* Deixa um bloco um do lado do outro */
     background-color: white;
-    border: 1px solid #012030 ; /* borda */
+    border: 1px solid #383a3b ; /* borda */
     text-align: center;
     height: 95px; /* altura */
     width:300px; /* largura */
     margin:auto;
     border-radius: 30px;
-    box-shadow: 5px 5px 15px #012030;
+    box-shadow: 5px 5px 15px #444c50;
 }
 div:hover{ /* passar o mouse por cima e mudar de cor */
     background-color: #566273;
@@ -81,4 +95,21 @@ a > div {
 }
 main#foto{
     width: 200px;
+}
+
+.omep{
+     margin-bottom: 60px;
+    height: 70px;
+    color: white;
+    text-shadow: 6px 6px 6px black;
+}
+.rd{
+    margin-bottom: 60px;
+    height: 42px;
+    padding-bottom: 0px;
+    text-shadow: 8px 8px 5px black;
+    color: white;
+}
+.fotoperfil{
+    transform: translate(283%, 0%);
 }
